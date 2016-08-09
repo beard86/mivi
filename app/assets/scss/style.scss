@@ -1,0 +1,57 @@
+//----------------------------------*\
+// SCSS MIXINS
+//----------------------------------*/
+@import "bourbon/bourbon";
+@import 'mixins/_position.scss';
+
+//----------------------------------*\
+// CONFIG MODULES
+//----------------------------------*/
+
+// Config modules
+@import 'modules/_vars.scss';
+@import 'modules/_clearfix.scss';
+@import 'modules/_normalize.scss';
+@import 'modules/_defaults.scss';
+
+@import 'lib/_animate.scss';
+
+//----------------------------------*\
+// PARTIALS
+//----------------------------------*/
+
+@import 'partials/_header.scss';
+@import 'partials/_nav.scss';
+@import 'partials/_swipercontent';
+@import 'partials/_main.scss';
+@import 'partials/_intro.scss';
+@import 'partials/_landing.scss';
+
+@import 'partials/_footer.scss';
+@import 'partials/_animatetext.scss';
+@import 'partials/_tweenelements.scss';
+@import 'partials/_sliderimages.scss';
+@import 'partials/_sliders.scss';
+@import 'partials/_contact.scss';
+@import 'partials/_responsivetextcolour.scss';
+
+//----------------------------------*\
+// OBJECTS & MODULES
+//----------------------------------*/
+@import 'modules/_icon.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_inputs.scss';
+@import 'modules/_lists.scss';
+@import 'modules/_typography.scss';
+@import 'modules/_misc.scss';
+@import 'modules/_app.scss';
+
+// Enhancement modules
+@import 'modules/_breakpoints.scss';
+@import 'modules/_print.scss';
+
+//----------------------------------*\
+// VENDOR
+//----------------------------------*/
+@import 'vendor/_swiper.scss';
+@import 'vendor/_external.scss';

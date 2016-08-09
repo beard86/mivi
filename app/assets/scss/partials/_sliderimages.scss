@@ -1,0 +1,126 @@
+#slider-images {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @include breakpoint(phablet) {
+        display: none;
+    }
+    span {
+        position: absolute;
+        top: 30%;
+        left: calc(50% - 142px);
+        z-index: 55;
+        width: 283px;
+        height: 187px;
+        background-repeat: no-repeat!important;
+        background-size: 283px 187px!important;
+        //box-shadow: 0 7px 7px rgba(0, 0, 0, .2);
+        -webkit-transform-origin:50% calc(100% + 60vw);
+        transform-origin:50% calc(100% + 60vw);
+        @include transition (all .7s cubic-bezier(.25, .46, .45, .94));
+        @include breakpoint(mobileonly) {
+            top:16%;
+        }
+        &:nth-child(1) {
+            background-image: url(../../assets/img/sliders/awareness-stadium.jpg);
+        }
+        &:nth-child(2) {
+            background-image: url(../../assets/img/sliders/sequence-0.jpg);
+            width: 163px;
+            height: 291px;
+            background-repeat: no-repeat!important;
+            background-size: 163px 291px!important;
+            left: calc(50% - 81px);
+        }
+        &:nth-child(3) {
+            background-image: url(../../assets/img/sliders/sequence-1.jpg);
+            width: 163px;
+            height: 291px;
+            background-repeat: no-repeat!important;
+            background-size: 163px 291px!important;
+            left: calc(50% - 81px);
+        }
+        &:nth-child(4) {
+            background-image: url(../../assets/img/sliders/sequence-2.jpg);
+            width: 163px;
+            height: 291px;
+            background-repeat: no-repeat!important;
+            background-size: 163px 291px!important;
+            left: calc(50% - 81px);
+        }
+        &:nth-child(5) {
+            background-image: url(../../assets/img/sliders/sequence-3.jpg);
+            width: 163px;
+            height: 291px;
+            background-repeat: no-repeat!important;
+            background-size: 163px 291px!important;
+            left: calc(50% - 81px);
+        }
+        &:nth-child(6) {
+            background-image: url(../../assets/img/sliders/awareness-stadium.jpg);
+        }
+        &:nth-child(7) {
+            background-image: url(../../assets/img/sliders/canvas-mobile.jpg);
+            width: 163px;
+            height: 291px;
+            background-repeat: no-repeat!important;
+            background-size: 163px 291px!important;
+            left: calc(50% - 81px);
+        }
+        &:nth-child(8) {
+            background-image: url(../../assets/img/sliders/canvas-mobile2.jpg);
+            width: 163px;
+            height: 291px;
+            background-repeat: no-repeat!important;
+            background-size: 163px 291px!important;
+            left: calc(50% - 81px);
+        }
+        &:nth-child(9) {
+            background-image: url(../../assets/img/sliders/wide-content1.jpg);
+        }
+        &:nth-child(10) {
+            background-image: url(../../assets/img/sliders/wide-content1.jpg);
+        }
+        &:nth-child(11) {
+            background-image: url(../../assets/img/sliders/day-screens.jpg);
+        }
+        &:nth-child(12) {
+            background-image: url(../../assets/img/sliders/wide-content2.jpg);
+        }
+        &:nth-child(13) {
+            background-image: url(../../assets/img/sliders/sequence-4.jpg);
+            width: 163px;
+            height: 291px;
+            background-repeat: no-repeat!important;
+            background-size: 163px 291px!important;
+            left: calc(50% - 81px);
+        }
+        &:nth-child(14) {
+            background-image: url(../../assets/img/sliders/sequence-5.jpg);
+            width: 163px;
+            height: 291px;
+            background-repeat: no-repeat!important;
+            background-size: 163px 291px!important;
+            left: calc(50% - 81px);
+        }
+        &:nth-child(15) {
+            background-image: url(../../assets/img/sliders/sequence-6.jpg);
+            width: 163px;
+            height: 291px;
+            background-repeat: no-repeat!important;
+            background-size: 163px 291px!important;
+            left: calc(50% - 81px);
+        }
+
+    }
+}
+#slider-images span:not(:first-child) {
+    -webkit-transform: translate3d(0,0,0) rotateZ(90deg);
+    transform: translate3d(0,0,0) rotateZ(90deg);
+}
+
+.slide-change #slider-images span {
+    transition: none;
+}

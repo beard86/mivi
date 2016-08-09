@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>MIVI</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="//www.google-analytics.com" rel="dns-prefetch">
+    <link href="//ajax.googleapis.com" rel="dns-prefetch">
+    <!-- build:css assets/css/style.css -->
+      <link rel="stylesheet" href="assets/css/style.css">
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/lib/classie.js -->
+      <script src="assets/js/lib/classie.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js assets/js/lib/polyfill.js -->
+      <script src="assets/js/lib/polyfill.js"></script>
+    <!-- endbuild -->
+    <!-- build:js assets/js/lib/modernizr.js -->
+      <script src="assets/js/vendor/modernizr.min.js"></script>
+    <!-- endbuild -->
+
+
+  </head>
+  <body class="slide-change" data-started="false" data-current-section="0" data-forward="true">
+    <header class="header" role="banner">
+        <a id="home-btn" href="index.html">
+          MIVI
+        </a>
+    </header>
+  <div id="wrapper">
+      <div id="borders">
+        <div class="border hor top"></div>
+        <div class="border hor bot"></div>
+        <div class="border vert left"></div>
+        <div class="border vert right"></div>
+      </div>
+
+      <div id="mivi-anim">
+        <div id="filter" class="filter">
+            <canvas id="canvas"></canvas>
+          <div id="processEl" class="process">    
+            <canvas id="redCanvas"></canvas>
+            <canvas id="greenCanvas"></canvas>
+            <canvas id="blueCanvas"></canvas>
+            <canvas id="yellowCanvas"></canvas>
+          </div>
+          <!--div class="process">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div-->
+        </div>
+        <div class="branches">
+          <div class="branch-01"></div>
+          <div class="branch-02"></div>
+          <div class="branch-03"></div>
+          <div class="branch-top"></div>
+          <div class="leaf-01"></div>
+          <div class="leaf-02"></div>
+        </div>
+      </div>
+
+      <div id="stripe"></div>
+
+      <div id="video-container">
+        <img id="image-load" class="image-load" src="assets/img/sliders/sequence-0.png">
+      </div>
+
+      <div id="timeline-ctn" class="glowing">
+        <div id="timeline-track">
+          <div id="timeline-bar"></div>
+        </div>
+        <!-- <div id="section-number"></div> -->
+      </div>
+
+      <main id="content" role="main">
+        
+        <section id="home">
+          <!--p class="tagline">Find the <em>perfect</em> show.<br> <strong>MIVI</strong></p-->
+        </section>
+
+        <div id="sections-list-container">
+
+          <div class="swiper-container">
+
+            <ol id="sections-list" class="swiper-wrapper">
+              <li class="swiper-slide">
+                <section id="search" class="current">
+                  <figure>
+                    <img src="" alt="">
+                  </figure>
+
+                  <article>
+                    <p><span>Mivi</span> finds the programmes you like, by filtering out the rest.</p>
+                  </article>
+
+                  <article id="middle">
+                    <p>Ten thousand TV transmissions per day</p>
+                  </article>
+
+                  <article class="filtered">
+                    <p>are filtered to</p>
+                  </article>
+
+                  <article>
+                    <p>around 30 cherry picked new programmes</p>
+                  </article>
+                </section>
+              </li>
+
+
+              <li class="swiper-slide">
+                <section id="find" class="">
+                  <figure>
+                    <img src="" alt="">
+                  </figure>
+
+                  <article>
+                    <p><span>Mivi</span> generates accurate programme information</p>
+                  </article>
+                  <article>
+                    <ul>
+                      <li>SUBGENRE</li>
+                      <li>GENRE</li>
+                      <li>FORMAT</li> 
+                      <li>RELEASE DATE</li> 
+                      <li>RUNNING TIME </li>
+                      <li>CHANNEL</li>
+                      <li>DESCRIPTION</li>
+                    </ul>
+                  </article>
+                </section>
+              </li>
+
+
+              <li class="swiper-slide">
+                <section id="explore" class="">
+                  <figure>
+                    <img src="" alt="">
+                  </figure>
+                  <article>
+                    <p><span>Mivi</span> saves your programme choices</p>
+                  </article>
+                  <article>
+                    <p>Watch live and on catch up</p>
+                  </article>
+
+                  <article>
+                    <p>Send remote record requests to your set top box</p>
+                  </article>
+                </section>
+              </li>
+
+
+              <li class="swiper-slide">
+                <section id="suggest">
+                  <figure>
+                    <img src="" alt="">
+                  </figure>
+
+                  <article>
+                    <p>Share your <span class="left-marg">Mivi</span> choices with friends, see trailers, reviews &amp; rich programme information.<br/> </p>
+                  </article>
+
+                  <article>
+                    <p><span>Mivi</span> see what you're missing!</p>
+                  </article>
+                </section>
+              </li>
+
+
+
+            </ol><!-- /.swiper-wrapper -->
+
+            <div id="slider-images">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+          </div><!-- /.swiper-container -->
+
+          <!--ul id="slider-nav">
+            <li><a href="#search">Search</a></li>
+            <li><a href="#find">Find</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#suggest">Suggest</a></li>
+          </ul-->
+
+        </div><!-- /#sections-list-container -->
+
+
+
+        <section id="download">
+
+          <article>
+            <!--h2>Now Available for Download</h2>
+            <p>Now Available for Download</p-->
+            
+            <!--ul class="download-list">
+              <li><a href="##" class="download-btn black" target="_blank">Download on the App Store</a></li>
+              <li><a href="##" class="download-btn black android" target="_blank">Download on Google Play</a></li>
+            </ul-->
+
+          </article>
+
+          <div id="illustration-02"></div>
+
+  </section>
+
+
+      </main><!-- /#content -->
+
+
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <!-- build:js assets/js/lib/main.js -->
+    <script src="assets/components/jquery/jquery-2.2.3.min.js"></script>
+    <script src="assets/js/lib/jquery.touchSwipe.min.js"></script>
+    <script src="assets/js/lib/swiper.jquery.js"></script>
+    <script src="assets/js/vendor/canvas-falling-squares.js"></script>
+    <script src="assets/js/canvas.js"></script>
+    <script src="assets/js/main.js"></script>
+  <!-- endbuild -->
+
+  </body>
+</html>

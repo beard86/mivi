@@ -1,0 +1,179 @@
+.tween-center {
+    transition: all,0.5s ease-in-out;
+}
+#video-container {
+    top: 84%;
+    left: 50%;
+    z-index: 4000;
+    width: 24%;
+    min-width: 329px;
+    position: relative;
+    -webkit-transform: translate3d(-50%, 0, 0) ;
+    transform: translate3d(-50%, 0, 0) ;
+
+    @include breakpoint(phablet) {
+            width: 29%;
+    }
+    @include breakpoint(desktop) {
+        width: 24%;
+    }
+    @include breakpoint(tallwide) {
+       // top: 105%;
+       // width: 28%;
+    }
+    @include breakpoint(widescreen) {
+	    width: 510px;
+    }
+    video {
+        position: absolute;
+        top: 7.5%;
+        z-index: 0;
+        left: 0;
+        width: 100%;
+        padding: 29px;
+        @include breakpoint(phablet) {
+            padding: 38px;
+        }
+        @include breakpoint(laptop) {
+            padding: 29px 28px 28px 28px;
+        }
+        @include breakpoint(widescreen) {
+                padding: 45px 53px;
+        }
+        &.z-index20 {
+            z-index: 20;
+        }
+    }
+    .image-load {
+                padding:20.5% 8.25%;
+
+    }
+}
+
+#video-container>div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+#video-container:before {
+    content: ' ';
+    display: block;
+    padding-top: 187.53799%
+}
+
+#video-container:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/img/sliders/phone-outline.png);
+    background-repeat: no-repeat;
+    background-size: contain!important;
+    background-position: center;
+}
+
+.image-load {
+    top: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+span.bg {
+    background:$white;
+    width: 82%;
+    height: 82%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10% 11%;
+    z-index: 0;
+    @include breakpoint(widescreen) {
+        margin: 12% 2% 11% 10%;
+    }
+}
+#video-container {
+    @include breakpoint(mobileonly){
+        display: none;
+    }
+}
+
+#stripe {
+    position: absolute;
+    top: 78%;
+    left: 55px;
+    z-index: 300;
+    width: calc(100% - 110px);
+    height: 4px;
+    background: $orange;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 0 0;
+    transform-origin: 50% 0 0;
+    -webkit-transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -30px, 0)
+}
+
+canvas {
+   // position: absolute;
+}
+
+@-webkit-keyframes blocks {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(100px); }
+}
+@-moz-keyframes blocks {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(100px); }
+}
+@-o-keyframes blocks {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(100px); }
+}
+@keyframes blocks {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(100px); }
+}
+.process {
+    opacity: 0;
+    width: 24%;
+    top: 69%;
+    left: 50%;
+    transform: translateX(-50%);
+    //z-index: 40000;
+    @include breakpoint(phablet) {
+        top: 68%;
+        width:15.65%;
+            left: 49%;
+    }
+    @include breakpoint(tablet) {
+               width: 19%;
+            left: 50%;
+    }
+    @include breakpoint(desktop) {
+        top: 79%;
+        width:21%;
+        left: 50%;
+        height: 60%;
+        overflow: hidden;
+    }
+    @include breakpoint(widescreen) {
+        top: 80%;
+    }
+}
+.process span {
+  -webkit-animation: blocks .7s infinite; /* Safari 4+ */
+  -moz-animation:    blocks .7s infinite; /* Fx 5+ */
+  -o-animation:      blocks .7s infinite; /* Opera 12+ */
+  animation:         blocks .7s infinite; /* IE 10+, Fx 29+ */
+}

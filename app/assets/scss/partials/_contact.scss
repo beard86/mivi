@@ -1,0 +1,67 @@
+#contact {
+	background-color:$grey-blue;
+	@include breakpoint(mobileonly) {
+		height:auto!important;
+	}
+	.fifty {
+		&:first-child {
+			padding: 7% 18% 7% 8%;
+			position: relative;
+		    z-index: 4;
+		    background-color: #2c2f39;
+	        height: 100%;
+	        @include breakpoint(phablet) {
+	        	padding: 27% 4% 7% 8%;
+	        }
+	        @include breakpoint(desktop) {
+				padding: 7% 18% 7% 8%;
+	        }
+			@include breakpoint(widescreen) {
+				padding: 7% 28% 7% 10%;	
+			}
+		}
+		&:last-child {
+
+			@include breakpoint(mobileonly) {
+				display: none;
+			}
+			@include breakpoint(phablet) {
+				overflow: hidden;
+				height: 100%;
+				transform: scale(3);
+				position: relative;
+				top: 60%;
+			}
+			@include breakpoint(laptop) {
+				position: static;
+				transform: scale(1);
+			}
+		}
+	}
+	h1 {
+		font-weight: 100;
+	    margin-bottom: 0.4em;
+	}
+	p {
+		line-height: 1.7em;
+		font-size: 0.75em;
+
+		&.first {
+			margin-bottom:25%;	
+		}
+		&.second {
+			margin-bottom:12.5%;	
+		}
+		&.footer {
+			font-size: 0.5em;
+			    margin: 0.67em 0;
+		}
+	}
+	span {
+        padding: 5%;
+	    background: $mid-grey;
+	    display: inline-block;
+        color: $white;
+	}
+}
+

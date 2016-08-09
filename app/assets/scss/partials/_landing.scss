@@ -1,0 +1,47 @@
+body#landing {
+	overflow:hidden;
+}
+
+#hero {
+	.tbl-row {
+		>a {
+			color: #fff;
+			display: inline-block;
+			background: rgba(0, 0, 0, 0.2);
+			min-width: 200px;
+			//padding: 16px;
+			min-height: 200px;
+			vertical-align: bottom;
+		    transform: translateY(300%);
+		    @include transition (all 1s $ease-in-out-circ);
+			img {
+				max-width: 70%;
+				margin: 14px;
+			    margin: 27px 14px;
+			}
+			h2,h3 {
+				background: rgba(0, 0, 0, 0.15);
+				margin: 0;
+			}
+			h2 {
+				padding:  10px 10px 0px;
+			}
+			h3 {
+				padding: 10px;
+
+			}
+			&:last-child {
+			    margin-left: 3%;
+				img {
+					max-width: 40%;
+					margin: 14px;
+
+				}
+			}
+			&:hover {
+				background: rgba(0, 0, 0, 0.4);
+			}
+		}
+
+	}
+}

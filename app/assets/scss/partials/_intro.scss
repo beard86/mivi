@@ -1,0 +1,66 @@
+#intro {
+	background-color:$dark-blue;
+	>* {
+		margin:0 auto;
+	}
+	hr {
+		width:20%;
+	}
+	h1 {
+		max-width: 760px;
+		margin:0 auto 4%;
+		font-weight: 500;
+		@include breakpoint(mobileonly) {
+		    font-size: 1.4em;
+			margin-bottom: 10%;
+		}
+		@include breakpoint(laptop) {
+			    font-size: 1.5em;
+		}
+	}
+	.main-content {
+		max-width:600px;
+		@include breakpoint(mobileonly) {
+			padding: 50px 40px 50px;
+		}
+		@include breakpoint(phablet) {
+			max-width: 96%;
+		}
+		@include breakpoint(desktop) {
+		    max-width: 1540px;
+		    width: 100%;
+		}
+		>img {
+			width:100%;
+			@include breakpoint(mobileonly) {
+				width:100%
+			}
+			@include breakpoint(desktop) {
+				width:33.333%
+			}
+			@include breakpoint(tallwide) {
+				width: 63.333%;
+			}
+			@include breakpoint(widescreen) {
+				width:50%;
+			}
+		}
+	}
+	.down {
+		background-color:$darker-blue;
+		width:100%;
+		position: absolute;
+		bottom: 0;
+		height: 70px;
+		max-width:100%;
+		img {
+			width: 40px;
+			margin: 0 auto;
+	        @include vertical-align($position: relative);
+
+		}
+	}
+	.content-center-inner {
+		vertical-align: bottom;
+	}
+}

@@ -1,0 +1,52 @@
+$white: #FFFFFF;
+$black: #000000;
+$off-black: #121212;
+$light-blue: #00b5f8;
+$lighter-blue: #57add0;
+$black-trans: rgba(0, 0, 0, 0.75);
+$grey: #eaeaea;
+$dark-grey:#474747;
+$light-grey:#f2f2f2;
+$dark-blue:#24212c;
+$grey-blue:#2c2f39;
+
+$darker-blue:#1e1b24;
+$base : #F7F6F0;
+$darken : darken(#F7F6F0 , 30%);
+$back: darken(#F7F6F0, 40%);
+$red: #ff3b20;
+$blue:#4f67e5;
+$orange:#ffa500;
+$green:#43db84;
+$purple:#7543db;
+
+$mid-grey:#acafb9;
+
+/*********************
+BREAKPOINTS
+*********************/
+
+ @mixin breakpoint($point) {
+   @if $point == widescreen {
+     @media (min-width: 120.063em) { @content ; }
+  }
+  @else if $point == tallwide {
+    @media (min-width: 50em) and (min-height: 60em) { @content ; }
+  }
+   @else if $point == desktop {
+     @media (min-width: 70em) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (min-width: 64em) { @content ; }/* (OVER 1440px) */
+  }
+    @else if $point == tablet {
+     @media (min-width: 50em) { @content ; }
+  }
+   @else if $point == phablet {
+     @media (min-width: 37.5em)  { @content ; }/* (OVER 768px) */
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 37.5em)  { @content ; }/* (UNDER 768px) */
+
+  }
+}
